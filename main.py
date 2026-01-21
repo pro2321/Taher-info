@@ -1,11 +1,9 @@
 import os
-from config.config import Config
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-# Error message if token is not found
-if not TOKEN:
-    raise ValueError("Bot Token environment variable 'BT' is not set!")
+# Import from vars
+from vars import TOKEN
 
 # /start command handler
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -18,7 +16,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Main function
 def main():
-    app = Application.builder().token(TOKEN).build()
+    app = Application.builder().token(BOT_TOKEN).build()
 
     # Command handler
     app.add_handler(CommandHandler("start", start))
