@@ -5,4 +5,4 @@ import os
 load_dotenv()
 
 
-BOT_TOKEN = os.getenv("BT)
+TOKEN = os.getenv("BT)
