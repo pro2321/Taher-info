@@ -16,7 +16,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Main function
 def main():
-    app = Application.builder().token(BOT_TOKEN).build()
+    app = Application.builder().token(TOKEN).build()
 
     # Command handler
     app.add_handler(CommandHandler("start", start))
