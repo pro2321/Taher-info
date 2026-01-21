@@ -1,9 +1,7 @@
 import os
+from config.config import Config
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
-
-# Get Bot Token from environment variable
-TOKEN = os.getenv("BT")
 
 # Error message if token is not found
 if not TOKEN:
