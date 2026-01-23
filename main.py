@@ -3,9 +3,9 @@ import time
 import yt_dlp
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from vars import BOT TOKEN
-from vars import API HASH
-from vars import API ID
+from vars import BOT_TOKEN
+from vars import API_HASH
+from vars import API_ID
 
 app = Client(
     "fb_auto_best_bot",
