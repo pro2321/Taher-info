@@ -5,4 +5,6 @@ import os
 load_dotenv()
 
 
-TOKEN = os.getenv("BT")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+API_ID = os.getenv("API_ID")
+API HASH = os.getenv(API_HASH)
